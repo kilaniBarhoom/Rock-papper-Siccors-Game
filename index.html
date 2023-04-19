@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>RPS</title>
+</head>
+<body>
+   <div class="container">
+    <div class="content">
+        <div class="header">
+            <h1>Rock-Papper-Scissors</h1>
+        </div>
+        <div class="twoboxes">
+            <div id="box1">
+                <div class="chose-word1"><span>You Chose :</span> <span id="You-chose" style="font-size: 1.7rem; font-weight: 700; text-transform: capitalize; font-family: Arial, Helvetica, sans-serif; color: coral;"></span></div>
+                <div id="box1-pick"></div>
+                <div id="box1-score">
+                    <span>Your Score :</span>
+                    <span id="score1"></span>
+                </div>
+            </div>
+
+            <div class="choosing-box">
+                <span>Pick One :</span>
+                <ul>
+                    <li>
+                        <span onclick="papperClick()"><img src="assets/images/papper.png" alt=""  ></span>
+                    </li>
+                    <li>
+                        <span onclick="rockClick()"><img src="assets/images/rock.png" alt="" ></span>
+                    </li>
+                    <li>
+                        <span onclick="scissorsClick()"><img src="assets/images/scissors.png" alt="" ></span>
+                    </li>
+                </ul>
+                <div class="reset" onclick="resetScore()">
+                    <span>Reset Score</span>
+                </div>
+            </div>
+            <div id="box2">
+                <div class="chose-word2"><span>Opponent Chose :</span> <span id="opponent-chose" style="font-size: 1.7rem; font-weight: 700; text-transform: capitalize; font-family: Arial, Helvetica, sans-serif; color: coral;"></span></div>
+                <div id="box2-pick"></div>
+                <div id="box2-score">
+                    <span>Opponents Score :</span>
+                    <span id="score2"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   </div>
+      
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
